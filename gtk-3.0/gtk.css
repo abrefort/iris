@@ -1,12 +1,12 @@
 /* default color scheme */
 @define-color bg_color #f4f5f6;
-@define-color fg_color #3f454f;
+@define-color fg_color #2a2734;
 @define-color base_color #ffffff;
-@define-color text_color #3f454f;
+@define-color text_color #2a2734;
 @define-color selected_bg_color transparent;
-@define-color selected_fg_color #9f79a5;
+@define-color selected_fg_color #df6309;
 @define-color tooltip_bg_color #fefefe;
-@define-color tooltip_fg_color #2d2d2d;
+@define-color tooltip_fg_color #2a2734;
 
 /* colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_bg_color @bg_color;
@@ -23,7 +23,7 @@
 @define-color dark_shadow #000;
 
 /* misc colors used by gtk+ */
-@define-color info_fg_color #333;
+@define-color info_fg_color #2a2734;
 @define-color info_bg_color #f2f2f2;
 @define-color warning_fg_color #fefefe;
 @define-color warning_bg_color #fa993e;
@@ -31,7 +31,7 @@
 @define-color question_bg_color #5160d2;
 @define-color error_fg_color #fefefe;
 @define-color error_bg_color #fa4a3e;
-@define-color link_color #9f79a5;
+@define-color link_color #df6309;
 @define-color success_color #53a93f;
 @define-color warning_color #f57900;
 @define-color error_color #cc0000;
@@ -42,22 +42,22 @@
 @define-color destructive_color mix (mix (#db523c, #f00, 0.5), #888, 0.2);
 
 /* widget colors */
-@define-color button_bg_color #41464f;
+@define-color button_bg_color #2a2734;
 @define-color combobox_bg_color #f6f6f6;
 
-@define-color menubar_bg_color #2e3237;
+@define-color menubar_bg_color #23212C;
 @define-color menubar_fg_color #ebebeb;
 @define-color toolbar_bg_color @theme_bg_color;
 @define-color toolbar_fg_color @theme_text_color;
 @define-color menu_bg_color shade(@menubar_bg_color, 0.92);
 @define-color menu_fg_color @theme_bg_color;
-@define-color panel_bg_color #222222;
+@define-color panel_bg_color #23212C;
 @define-color panel_fg_color #f2f2f2;
-@define-color menu_selected_fg_color #9f79a5;
+@define-color menu_selected_fg_color #df6309;
 
 /* osd */
 @define-color osd_base #fafafa;
-@define-color osd_fg #333333;
+@define-color osd_fg #23212C;
 @define-color osd_bg #fafafa;
 
 /* window manager colors */

@@ -1,5 +1,5 @@
 gtk-toolbar-icon-size = large-toolbar
-gtk-color-scheme = "base_color:#ffffff\nbg_color:#f4f5f6\ntooltip_bg_color:#656D78\nselected_fg_color:#fb4757\ntext_color:#3f454f\nfg_color:#555555\ntooltip_fg_color:#ffffff\nselected_bg_color:#ffffff"
+gtk-color-scheme = "base_color:#ffffff\nbg_color:#f4f5f6\ntooltip_bg_color:#23212C\nselected_fg_color:#df6309\ntext_color:#3f454f\nfg_color:#2a2734\ntooltip_fg_color:#ffffff\nselected_bg_color:#ffffff"
 gtk-icon-sizes = "panel-menu=16,16:panel=8,8:gtk-button=16,16:gtk-large-toolbar=24,24:gtk-small-toolbar=16,16"
 gtk-button-images	= 0
 gtk-menu-images	= 0
@@ -204,29 +204,29 @@ style "default"
 
 
 
-	fg[NORMAL] = @fg_color
-	fg[PRELIGHT] = @fg_color
-	fg[SELECTED] = @selected_fg_color
-	fg[ACTIVE] = @fg_color
-	fg[INSENSITIVE] = mix (0.5, @bg_color, @fg_color)
+  fg[NORMAL] = @fg_color
+  fg[PRELIGHT] = @fg_color
+  fg[SELECTED] = @selected_fg_color
+  fg[ACTIVE] = @fg_color
+  fg[INSENSITIVE] = mix (0.5, @bg_color, @fg_color)
 
-	bg[NORMAL] = @bg_color
-	bg[PRELIGHT] = shade (0.98, @bg_color)
-	bg[SELECTED] = @bg_color
-	bg[ACTIVE] = shade (0.9, @bg_color)
-	bg[INSENSITIVE] = @bg_color
+  bg[NORMAL] = @bg_color
+  bg[PRELIGHT] = shade (0.98, @bg_color)
+  bg[SELECTED] = @bg_color
+  bg[ACTIVE] = shade (0.9, @bg_color)
+  bg[INSENSITIVE] = @bg_color
 
-	base[NORMAL] = @base_color
-	base[PRELIGHT] = shade (0.98, @base_color)
-	base[SELECTED] = @base_color
-	base[ACTIVE] = @base_color
-	base[INSENSITIVE] = shade (0.95, @base_color)
+  base[NORMAL] = @base_color
+  base[PRELIGHT] = shade (0.98, @base_color)
+  base[SELECTED] = @base_color
+  base[ACTIVE] = @base_color
+  base[INSENSITIVE] = shade (0.95, @base_color)
 
-	text[NORMAL] = @text_color
-	text[PRELIGHT] = @text_color
-	text[SELECTED] = @selected_fg_color
-	text[ACTIVE] = @selected_fg_color
-	text[INSENSITIVE] = mix (0.6, @bg_color, @fg_color)
+  text[NORMAL] = @text_color
+  text[PRELIGHT] = @text_color
+  text[SELECTED] = @selected_fg_color
+  text[ACTIVE] = @selected_fg_color
+  text[INSENSITIVE] = mix (0.6, @bg_color, @fg_color)
 
 
   engine "pixmap"
@@ -329,199 +329,199 @@ style "default"
  # Arrows (all states)
       image
       {
-	 	function		= ARROW
-		recolorable		= TRUE
-		state                   = NORMAL
-		overlay_file		= "Arrows/arrow-up.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= UP
+     function		= ARROW
+    recolorable		= TRUE
+    state                   = NORMAL
+    overlay_file		= "Arrows/arrow-up.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= UP
       }
 
       image
       {
-		function		= ARROW
-		state			= PRELIGHT
-		recolorable		= TRUE
-		overlay_file		= "Arrows/arrow-up-prelight.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= UP
+    function		= ARROW
+    state			= PRELIGHT
+    recolorable		= TRUE
+    overlay_file		= "Arrows/arrow-up-prelight.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= UP
       }
 
      image
       {
-		function		= ARROW
-		state			= ACTIVE
-		recolorable		= TRUE
-		overlay_file		= "Arrows/arrow-up-active.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= UP
+    function		= ARROW
+    state			= ACTIVE
+    recolorable		= TRUE
+    overlay_file		= "Arrows/arrow-up-active.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= UP
       }
 
       image
       {
-		function		= ARROW
-		state			= INSENSITIVE
-		recolorable		= TRUE
-		overlay_file		= "Arrows/arrow-up-insensitive.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= UP
+    function		= ARROW
+    state			= INSENSITIVE
+    recolorable		= TRUE
+    overlay_file		= "Arrows/arrow-up-insensitive.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= UP
       }
 
       image
       {
-     	 	function		= ARROW
-      		state			= NORMAL
-      		recolorable		= TRUE
-      		overlay_file		= "Arrows/arrow-down.png"
-      		overlay_border		= { 0, 0, 0, 0 }
-     		overlay_stretch		= FALSE
-     		arrow_direction		= DOWN
+          function		= ARROW
+          state			= NORMAL
+          recolorable		= TRUE
+          overlay_file		= "Arrows/arrow-down.png"
+          overlay_border		= { 0, 0, 0, 0 }
+         overlay_stretch		= FALSE
+         arrow_direction		= DOWN
       }
 
       image
       {
-		function		= ARROW
-		state			= PRELIGHT
-		recolorable		= TRUE
-		overlay_file		= "Arrows/arrow-down-prelight.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= DOWN
+    function		= ARROW
+    state			= PRELIGHT
+    recolorable		= TRUE
+    overlay_file		= "Arrows/arrow-down-prelight.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= DOWN
      }
 
      image
      {
-		function		= ARROW
-		state			= ACTIVE
-		recolorable		= TRUE
-		overlay_file		= "Arrows/arrow-down-pressed.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= DOWN
+    function		= ARROW
+    state			= ACTIVE
+    recolorable		= TRUE
+    overlay_file		= "Arrows/arrow-down-pressed.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= DOWN
      }
 
      image
      {
-		function		= ARROW
-		state			= INSENSITIVE
-		recolorable		= TRUE
-		overlay_file		= "Arrows/arrow-down-insens.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= DOWN
+    function		= ARROW
+    state			= INSENSITIVE
+    recolorable		= TRUE
+    overlay_file		= "Arrows/arrow-down-insens.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= DOWN
      }
 
      image
      {
-		function		= ARROW
-		recolorable		= TRUE
-		state                   = NORMAL
-		overlay_file		= "Arrows/arrow-left.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= LEFT
+    function		= ARROW
+    recolorable		= TRUE
+    state                   = NORMAL
+    overlay_file		= "Arrows/arrow-left.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= LEFT
       }
 
       image
       {
-		function		= ARROW
-		recolorable		= TRUE
-		state                   = PRELIGHT
-		overlay_file		= "Arrows/arrow-left-prelight.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= LEFT
+    function		= ARROW
+    recolorable		= TRUE
+    state                   = PRELIGHT
+    overlay_file		= "Arrows/arrow-left-prelight.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= LEFT
       }
 
       image
       {
-		function		= ARROW
-		recolorable		= TRUE
-		state                   = ACTIVE
-		overlay_file		= "Arrows/arrow-left-active.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= LEFT
+    function		= ARROW
+    recolorable		= TRUE
+    state                   = ACTIVE
+    overlay_file		= "Arrows/arrow-left-active.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= LEFT
       }
 
       image
       {
-		function		= ARROW
-		recolorable		= TRUE
-		state                   = INSENSITIVE
-		overlay_file		= "Arrows/arrow-left-insensitive.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= LEFT
+    function		= ARROW
+    recolorable		= TRUE
+    state                   = INSENSITIVE
+    overlay_file		= "Arrows/arrow-left-insensitive.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= LEFT
       }
 
       image
       {
-		function		= ARROW
-		recolorable		= TRUE
-		state                   = NORMAL
-		overlay_file		= "Arrows/arrow-right.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= RIGHT
+    function		= ARROW
+    recolorable		= TRUE
+    state                   = NORMAL
+    overlay_file		= "Arrows/arrow-right.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= RIGHT
       }
 
       image
       {
-		function		= ARROW
-		recolorable		= TRUE
-		state                   = PRELIGHT
-		overlay_file		= "Arrows/arrow-right-prelight.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= RIGHT
+    function		= ARROW
+    recolorable		= TRUE
+    state                   = PRELIGHT
+    overlay_file		= "Arrows/arrow-right-prelight.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= RIGHT
       }
 
       image
       {
-		function		= ARROW
-		recolorable		= TRUE
-		state                   = ACTIVE
-		overlay_file		= "Arrows/arrow-right-active.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= RIGHT
+    function		= ARROW
+    recolorable		= TRUE
+    state                   = ACTIVE
+    overlay_file		= "Arrows/arrow-right-active.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= RIGHT
       }
 
       image
       {
-		function		= ARROW
-		recolorable		= TRUE
-		state                   = INSENSITIVE
-		overlay_file		= "Arrows/arrow-right-insensitive.png"
-		overlay_border		= { 0, 0, 0, 0 }
-		overlay_stretch		= FALSE
-		arrow_direction		= RIGHT
+    function		= ARROW
+    recolorable		= TRUE
+    state                   = INSENSITIVE
+    overlay_file		= "Arrows/arrow-right-insensitive.png"
+    overlay_border		= { 0, 0, 0, 0 }
+    overlay_stretch		= FALSE
+    arrow_direction		= RIGHT
       }
 
   }
 }
 
 style "chrome-gtk-frame" {
-	ChromeGtkFrame::frame-color = @text_color
-	ChromeGtkFrame::inactive-frame-color = @text_color
+  ChromeGtkFrame::frame-color = @text_color
+  ChromeGtkFrame::inactive-frame-color = @text_color
 
-	ChromeGtkFrame::frame-gradient-size = 0
-	ChromeGtkFrame::frame-gradient-color = @text_color
+  ChromeGtkFrame::frame-gradient-size = 0
+  ChromeGtkFrame::frame-gradient-color = @text_color
 
-	ChromeGtkFrame::incognito-frame-color = @text_color
-	ChromeGtkFrame::incognito-inactive-frame-color = @text_color
+  ChromeGtkFrame::incognito-frame-color = @text_color
+  ChromeGtkFrame::incognito-inactive-frame-color = @text_color
 
-	ChromeGtkFrame::incognito-frame-gradient-size = 0
-	ChromeGtkFrame::incognito-frame-gradient-color = @text_color
+  ChromeGtkFrame::incognito-frame-gradient-size = 0
+  ChromeGtkFrame::incognito-frame-gradient-color = @text_color
 
-	ChromeGtkFrame::scrollbar-trough-color = @bg_color
-	ChromeGtkFrame::scrollbar-slider-normal-color =  mix (0.21, @fg_color, @bg_color)
-	ChromeGtkFrame::scrollbar-slider-prelight-color =  mix (0.31, @fg_color, @bg_color)
+  ChromeGtkFrame::scrollbar-trough-color = @bg_color
+  ChromeGtkFrame::scrollbar-slider-normal-color =  mix (0.21, @fg_color, @bg_color)
+  ChromeGtkFrame::scrollbar-slider-prelight-color =  mix (0.31, @fg_color, @bg_color)
 }
 
 class "ChromeGtkFrame" style "chrome-gtk-frame"
